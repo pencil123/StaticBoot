@@ -3,43 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BootStrap</title>
-  <link href="../dist/css/bootstrap.css" rel="stylesheet" >
-  <script typet="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-  <script type="text/javascript" src="../dist/js/bootstrap.js"></script>
+  <title>清除浮动</title>
+  <style>
+  .divcss5{ width:400px; border:1px solid #F00; background:#FF0;}
+  .divcss5:after{ clear:both;content:"";display: table;}
+  .divcss5-left,.divcss5-right{ width:180px; height:100px; border:1px solid #00F; background:#FFF}
+  .divcss5-left{ float:left}
+  .divcss5-right{ float:right}
+  </style>
 </head>
 <body>
-<div class="container">
-
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">菜鸟教程</a>
-      </div>
-      <div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">iOS</a></li>
-          <li><a href="#">SVN</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Java
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="#">jmeter</a></li>
-              <li><a href="#">EJB</a></li>
-              <li><a href="#">Jasper Report</a></li>
-              <li class="divider">1111111</li>
-              <li><a href="#">分离的链接</a></li>
-              <li class="divider"></li>
-              <li><a href="#">另一个分离的链接</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+<div class="divcss5">
+  <div class="divcss5-left">left浮动</div>
+  <div class="divcss5-right">right浮动</div>
+</div>
+<div style="border:1px solid #000000">
+  http://www.divcss5.com/jiqiao/j406.shtml
+  disable:table
 </div>
 </body>
 </html>
