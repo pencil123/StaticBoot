@@ -1,0 +1,20 @@
+.navbar-min {
+  margin-bottom: 0px;
+}
+
+.thumbnail {
+  background-color: #f1f1f1;
+}
+.thumbnail:hover{
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.thumbnail:hover h5 {
+  color:red;
+}
+
+/*.cut-padding {
+  margin-right: -10px;
+  margin-left: -10px;
+}*/
